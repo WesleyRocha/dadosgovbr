@@ -26,16 +26,66 @@ body{
 .logo{
 	margin: 5px 0 0;
 }
-.about{
+.about_int{
+	color: #474;
+	text-decoration: none;
+	background: #ded url("../image/bg_gradiente.png") repeat-x 0 0;
+	margin: 0px 0 0px 0;
+}
+a.about{
+	color: #474;
+	text-decoration: none;
 	width: 48%;
 	float: left;
 	height: 120px;
-	background:#efe url("image/bg_gradiente.png") repeat-x 0 0;
+	background: #cdc url("../image/bg_gradiente.png") repeat-x 0 0;
+	margin: 0px 0 0px 0;
 }
+a.about:hover{
+	-moz-box-shadow: 0px 4px 8px #888;
+	-webkit-box-shadow: 0px 4px 8px #888;
+	box-shadow: 0px 4px 8px #888;
+	margin: -3px 0 3px 0;
+}
+
 .search{
 	width: 48%;
 	margin: 0 0 0 51%;
 	height: 120px;
+	background: #ffd url("../image/bg_gradiente.png") repeat-x 0 0;
+	position: relative;
+}
+.search label{
+	font-size: 1.5em;
+	color: #957801;
+	font-weight:bold
+}
+.search input[type='text']{
+	border: 1px solid #ddd;
+	-web-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+	height: 30px;
+	width: 230px;
+	font-size: 2em;
+	color: #887;
+}
+.search input[type='submit']{
+    border: 1px solid #DDDDDD;
+    border-radius: 5px 5px 5px 5px;
+    color: #777777;
+    display: inline-block;
+    font-size: 21px;
+    height: 34px;
+    margin: 0 0 0 10px;
+    padding: 0 0;
+    width: 85px;
+}
+.search_campo{
+    width: 328px;
+    position: relative;
+    margin: 0 auto;
+	top: 15px;
 }
 .tag_list {
 	margin-top: 10px;
@@ -47,8 +97,7 @@ h2{
 	float: left;
 	padding: 10px;
 	background: #cdcdcd;
-	margin: 5px;
-	
+	margin: 5px;	
 	-web-border-radius: 5px;
 	-moz-border-radius: 5px;
 	border-radius: 5px;

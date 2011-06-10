@@ -1,0 +1,42 @@
+/* This file is just for importing other css files */
+body {
+    background: #FFFFFF;
+}
+body, input, textarea {
+    color: #333333;
+    font-size: 12px;
+    line-height: 18px;
+}
+a {
+    color: #474;
+    text-decoration: none;
+}
+#site-title h1 a img{
+	display: none;
+}
+#site-title h1 a{
+	background: url("images/marca.png") no-repeat 0 0;
+	heigth: 70px;
+	width: 250px;
+}
+#top-bar .search-form input.search {
+	border: 1px solid #DDDDDD;
+	border-radius: 5px 5px 5px 5px;
+	font-size: 20px;
+	height: 30px;
+	width: 230px;
+}
+#access {
+    background: none repeat scroll 0 0 transparent;
+    border-bottom: 0px solid #AAAAAA;
+    border-top: 0px solid #AAAAAA;
+}
+#access ul li a {
+    color: #474;
+    font-weight: bold;
+    text-decoration: none;
+}
+a:link {
+    color: #474;
+    text-decoration: none;
+}

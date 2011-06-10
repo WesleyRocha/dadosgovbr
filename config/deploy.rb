@@ -47,9 +47,9 @@ namespace :deploy do
 	desc <<-DESC
 	  Theme deploy
 	DESC
-	task :theme, :roles => web do
+	task :theme do
 		print "    deploying CKAN theme"
-		run "cp -R /home/operador/dadosgovbr/current/ckan-theme/* /home/operador/pyenv/src/ckan/ckan/"
+		run "cp -R /home/operador/dadosgovbr/current/ckan-theme/* /home/operador/pyenv/src/ckanext-dadosgovbr/ckanext/dadosgovbr/theme/"
 	end
 end
 
@@ -89,4 +89,4 @@ end
 
 # Callbacks.
 before 'deploy:setup', 'local:create_copy_dir', 'remote:create_copy_remote_dir'
-#after 'deploy:setup' , 'remote:create_symlink'
+after 'deploy' , 'deploy:theme'

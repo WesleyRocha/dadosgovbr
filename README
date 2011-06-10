@@ -1,0 +1,9 @@
+Deploy:
+                  
+  1) Faça apenas uma vez
+    
+    cap deploy:setup
+    
+  2) A cada versão
+  
+    cap deploy

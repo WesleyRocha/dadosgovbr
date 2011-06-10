@@ -1,0 +1,3 @@
+task :search_libs, :hosts => "www.capify.org" do
+  run "ls -x1 /usr/lib | grep -i xml"
+end

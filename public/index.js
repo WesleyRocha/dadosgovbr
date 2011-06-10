@@ -19,8 +19,10 @@ var CKAN = {
 				$(json).each(function(){
 					var tagName = this[0].toString();
 					var tagCount = this[1];
-					
-					$('<div class="tag" rel="' + tagCount + '">' + tagName + '</div>').appendTo($(".tag_list"));
+					  
+					var div = $('<div class="tag" rel="' + tagCount + '"></div>');
+					div.append($('<a href="' + CKAN.getHost() + 'tag/' + tagName + '">'+ tagName +'</a>'));
+					div.appendTo($(".tag_list"));
 				});
 			}
 		});
@@ -39,6 +41,8 @@ jQuery(function($){
 		e.preventDefault();
 		CKAN.searchPackage($("#search").prop("value"));
 	});
+	
+	$("#search").focus();
 });
 
 

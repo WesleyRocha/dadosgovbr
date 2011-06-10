@@ -1,0 +1,14 @@
+.tag_list {
+	margin-top: 10px;
+}
+
+.tag_list .tag {
+	float: left;
+	padding: 10px;
+	background: #cdcdcd;
+	margin: 5px;
+	
+	-web-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}

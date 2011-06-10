@@ -1,3 +1,4 @@
+
 body{
 	margin: 0;
 	padding: 0;
@@ -18,3 +19,18 @@ body{
 	border: 1px solid;
 	padding: 8px;
 }
+.tag_list {
+	margin-top: 10px;
+}
+
+.tag_list .tag {
+	float: left;
+	padding: 10px;
+	background: #cdcdcd;
+	margin: 5px;
+	
+	-web-border-radius: 5px;
+	-moz-border-radius: 5px;
+	border-radius: 5px;
+}
+

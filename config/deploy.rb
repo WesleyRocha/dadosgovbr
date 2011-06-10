@@ -17,10 +17,11 @@ set :copy_remote_dir, "/tmp/capistrano" # Directory on the remote machine where 
 #set :repository,  "./public"
 #set :scm, :none
 
-# Use with Subversion on local machine.
-#set :repository,  "file:///home/#{local_user}/repositories/#{application}/public"
-set :repository, "./public"
-set :scm, :none 
+# Git config (http://help.github.com/deploy-with-capistrano/)
+default_run_options[:pty] = true  # Must be set for the password prompt from git to work
+set :repository, "git@github.com:WesleyRocha/dadosgovbr.git"  # Your clone URL
+set :scm, "git"
+ssh_options[:forward_agent] = true
 
 #set :copy_cache, "#{copy_dir}/#{application}" # Directory in which the local copy will reside. Defaults to /tmp/#{application}. Note that copy_dir must not be the same as (nor inside) copy_cache and copy_cache must not exist before deploy:cold.
 #set :copy_exclude, [".svn", "**/.svn"] # Prevent Subversion directories being copied across.

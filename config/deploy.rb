@@ -1,3 +1,5 @@
+# Script retirado de http://f3internet.com/articles/2010/06/18/deploying-static-sites-with-capistrano/
+
 set :application, "dadosgovbr" # Application name.
 set :location, "200.198.213.70" # Web server url.
 set :user, "operador" # Remote user name. Must be able to log in via SSH.

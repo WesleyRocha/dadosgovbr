@@ -13,10 +13,6 @@ set :deploy_via, :copy # Copy the files across as an archive rather than using S
 set :copy_dir, "/tmp/capistrano" # Directory in which the archive will be created. Defaults to /tmp. Note that I had problems with /tmp because on my machine it's on a different partition to the rest of my filesystem and hence a hard link could not be created across devices.
 set :copy_remote_dir, "/tmp/capistrano" # Directory on the remote machine where the archive will be copied. Defaults to /tmp.
 
-# Use without Subversion on local machine.
-#set :repository,  "./public"
-#set :scm, :none
-
 # Git config (http://help.github.com/deploy-with-capistrano/)
 default_run_options[:pty] = true  # Must be set for the password prompt from git to work
 set :repository, "git@github.com:WesleyRocha/dadosgovbr.git"  # Your clone URL
@@ -47,6 +43,14 @@ namespace :deploy do
   task :restart do
     puts "    not doing restart because not a Rails application."
   end
+
+	desc <<-DESC
+	  Theme deploy
+	DESC
+	task :theme, :roles => web do
+		print "    deploying CKAN theme"
+		run "cp -R /home/operador/dadosgovbr/current/ckan-theme/* /home/operador/pyenv/src/ckan/ckan/"
+	end
 end
 
 # Custom tasks for our hosting environment.

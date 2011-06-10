@@ -1,3 +1,24 @@
+
+body{
+	margin: 0;
+	padding: 0;
+	font: 12px/1.5 Arial,Helvetica,sans-serif;
+	color: #333;
+}
+.wrapper{
+	width: 90%;
+	margin: 0 auto;
+	position: relative;
+}
+.channels{
+	position:absolute;
+	right: 0;
+	top: -4px;
+}
+.box{
+	border: 1px solid;
+	padding: 8px;
+}
 .tag_list {
 	margin-top: 10px;
 }
@@ -12,3 +33,4 @@
 	-moz-border-radius: 5px;
 	border-radius: 5px;
 }
+

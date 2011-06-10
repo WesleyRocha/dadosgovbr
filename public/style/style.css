@@ -13,10 +13,10 @@ body{
 .channels{
 	position:absolute;
 	right: 0;
-	top: -4px;
+	top: 10px;
 }
 .box{
-	border: 1px solid #999;
+	border: 1px solid #ddd;
 	padding: 8px;
 	border-radius: 8px;
 	-webkit-border-radius: 8px;
@@ -24,12 +24,25 @@ body{
 	margin: 0 0 16px;
 }
 .logo{
-	margin: 5px 0;
+	margin: 5px 0 0;
+}
+.about{
+	width: 48%;
+	float: left;
+	height: 120px;
+	background:#efe url("image/bg_gradiente.png") repeat-x 0 0;
+}
+.search{
+	width: 48%;
+	margin: 0 0 0 51%;
+	height: 120px;
 }
 .tag_list {
 	margin-top: 10px;
 }
-
+h2{
+	margin: 0 0 10px;
+}
 .tag_list .tag {
 	float: left;
 	padding: 10px;

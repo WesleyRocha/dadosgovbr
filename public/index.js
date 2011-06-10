@@ -1,7 +1,7 @@
 var CKAN = {
 	
 	getHost: function() {
-		return "http://br.ckan.net/";
+		return "http://softwarepublico.gov.br:2580/";
 	},
 	
 	fillTags: function() {

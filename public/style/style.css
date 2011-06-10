@@ -23,6 +23,9 @@ body{
 	-moz-border-radius: 8px;
 	margin: 0 0 16px;
 }
+.logo{
+	margin: 5px 0;
+}
 .tag_list {
 	margin-top: 10px;
 }
